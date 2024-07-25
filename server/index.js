@@ -13,7 +13,7 @@ const app = express();
 
 const corsConfig = {
   origin: [
-    'https://vk-chat-two.vercel.app', // Replace with your frontend URL
+    'https://vk-chat-beta.vercel.app/', // Replace with your frontend URL
   ],
   credentials: true,
 };
@@ -38,7 +38,7 @@ const server = app.listen(PORT, () => {
 const io = new SocketIOServer(server, {
   cors: {
     origin: [
-      'https://vk-chat-two.vercel.app', 
+      'https://vk-chat-beta.vercel.app/', 
     ],
     methods: ['GET', 'POST'],
   },
